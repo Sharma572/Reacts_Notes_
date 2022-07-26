@@ -1,0 +1,34 @@
+// import logo from './logo.svg';
+
+function App() {
+  function alrt() {
+    alert("alert called")
+  }
+  return (
+    <div className="App">
+      <button onClick={alrt()}>Click me</button>
+    </div>
+  );
+}
+
+export default App;
+
+Note:-   Dont call function while using event otherwise it will automatic called and not worked while clicking
+
+
+// import logo from './logo.svg';
+
+function App() {
+  function alrt() {
+    alert("alert called")
+  }
+  return (
+    <div className="App">
+      <button onClick={alrt}>Click me</button>
+    </div>
+  );
+}
+
+export default App;
+
+

@@ -1,4 +1,4 @@
-/* # Basics of React
+/** # Basics of React
 
 React is component-based.
 
@@ -6,14 +6,14 @@ React is component-based.
 
  1. Components as functions (Functional Components)
 
-1. A component as a class (class Components)
+1. A component as a class (class Components) 
 
-JSX → Javascript extension (XML + Javascript)
+*?    JSX → Javascript extension (XML + Javascript)
 
 JSX → HTML look alike integrated js code. 
 Babel → Converts your HTML look alike code to React actual code 
 
-Babel → React compiler
+*! Babel → React compiler
 
 Why do we use HTML look alike code most of the time? Because it helps us understand the code better visually.
 
@@ -49,6 +49,10 @@ function App() {
   subRoot.render(React.createElement("h1", null, "Newton School"));
 }
 ```
+
+
+*! Note While importing class components use {CompoNent Name}
+
 
 JSX makes our code helpful as a visual aid.
 
