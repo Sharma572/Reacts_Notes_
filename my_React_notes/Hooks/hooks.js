@@ -3,7 +3,7 @@
 
 ------------------------- Hooks ---------------------------
 -> With hooks we can use class component features like state, lifeCycle, pure component etc.
- Hooks allow you to reuse stateful logic without changing your component hierarchy. 
+ Hooks allows you to reuse stateful logic without changing your component hierarchy. 
 
 
 1. useState :- The React useState Hook allows us to track state in a function component.
