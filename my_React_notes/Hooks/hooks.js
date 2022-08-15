@@ -1,7 +1,7 @@
 /** 
 
 
-------------------------- Hooks in function ---------------------------
+------------------------- Hooks in function component ---------------------------
 -> With hooks we can use class component features like state, lifeCycle, pure component etc.
  Hooks allows you to reuse stateful logic without changing your component hierarchy. 
 
