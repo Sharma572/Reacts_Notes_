@@ -69,6 +69,9 @@ Ans =>  The state is a built-in React object that is used to contain data or inf
        ->   State is public.
 
 
+Q.11 => What is prop and why we use them?
+Ans => Props are arguments passed into react component . We use props to pass data one component
+       to another. Porps stands for property and it is aslo used to render dynamic flow of data in our components. 
 
 
 
