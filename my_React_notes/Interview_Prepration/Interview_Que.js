@@ -74,9 +74,11 @@ Ans => Props are arguments passed into react component . We use props to pass da
        to another. Porps stands for property and it is aslo used to render dynamic flow of data in our components. 
 
 
+Q . => Can we call an Api in componentDidUpdate?
+Ans => Yes we can call an Api but when we need conditional api call.
 
-
-
+Q => WHich lifeclycle will run first comonentDidUpdate or shouldComponentUpdate?
+Ans => shouldComponentUpdate calls first
 
 
 

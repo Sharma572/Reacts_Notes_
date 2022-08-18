@@ -25,24 +25,30 @@
 
    2. Updating -: Caused by a change to props and state and rerender the UI.
 
-   ->componentDidUpdate  :- This will calls when our state and props will updated. it has 3 
-                           parameter 1. preState(previous state) 2. preProps(previous props) 
-                           3. snapShot
-                         Note:-(We should not update our state in this fucntion without condition other it becomes infinite loop)
-
    -> shouldComponentUpdate :- Update immediately before render.Purpose: Allows developer to 
                                prevent rendering. it will call only updating phase.
                               *! note:- its default value is false it prevent rerender to allow 
                                       rerender return value should be true.
-                                     
-
+                                    
+                                      
+   ->componentDidUpdate  :- This will calls when our state and props will updated. it has 3 
+                           parameter 1. preState(previous state) 2. preProps(previous props) 
+                           3. snapShot
+                         Note:-(We should not update our state in this fucntion without condition other it becomes infinite loop)
+                         
+                         
 
 
    3. Unmounting -: called when your UI will no longer display the component.
+ 
+   -> componentWillUnmount :- When a component remove from the DOM This method will call.
 
 
 
-
+   ------------------  How life Cycle methods calls? -----------------------
+   1. Mounting -> Constuctor -> render() -> componentDidMount()
+   2. Updating -> shouldComponentupdate() if true -> { render() -> componentDidUpdated } else Or { render X  ->  componentDidUpdated X }
+   3. Unmounting -> componentWillUnmout()
 
 
 
