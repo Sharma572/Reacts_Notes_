@@ -81,7 +81,8 @@ Q => WHich lifeclycle will run first comonentDidUpdate or shouldComponentUpdate?
 Ans => shouldComponentUpdate calls first
 
 
-
+Q => What is hooks in react?
+Ans=>  Hooks allow you to reuse stateful logic without changing your component hierarchy. 
 
 
 
