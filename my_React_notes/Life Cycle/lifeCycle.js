@@ -21,7 +21,7 @@
 
    -> comoponentDidMount  :- This will called after the render method when our Dom (UI) render 
                         on screen it is usefull for API calls. (No effects of state and props).
-
+                        this function calls only one time.
 
    2. Updating -: Caused by a change to props and state and rerender the UI.
 
