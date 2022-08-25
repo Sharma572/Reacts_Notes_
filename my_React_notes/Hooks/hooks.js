@@ -29,10 +29,10 @@
   useEffect with cleanup() => It will only call when our component will about to unmount.
                               useEffect() return a function this is clenup function.
 
-  useContext() ->  Context provides a way to pass data through the component tree without passing 
+ 3. useContext() ->  Context provides a way to pass data through the component tree without passing 
                    props to down manually at every level.This a way to prevent from (prop drilling).
                   -> Previously we are using context api -> context -> provider -> consumer(lengthy code).
-                  -> then useContext() hook come into the picture
+                  -> then useContext() hook come into the picture we just replace consumer step with useContext
                    
   steps to archeive useContext() -> 1. createContext in parent component.
                                       const MyName = createContext();
@@ -40,10 +40,12 @@
                                      <MyName.Provider value={"Raunak Sharma"}> <compA/> <MyName.provider/>
                                       and export {MyName}
                                     3. import the context (MyName);
-                                     and assing that into a variable -> const myName = useContext(MyName)  
+                                     and assing that props in useContext(propsName) into a variable -> const myName = useContext(MyName)  
                                     Now we can easily use like ->  <h3>My Name is {myName} </h3>
 
-
+  4. useReducer()  -> useReducer is hook that is used for state managment and it is the alternative of useState
+                   -> useReducer(reducer,initialState) accept two parameter and reducer function is also accept two parameter 
+                      reducer(currentState,action)
 
 
   useEffect(
