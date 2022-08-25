@@ -1,4 +1,5 @@
-/*
+/** 
+
 
 ------------------------- Hooks ---------------------------
 -> With hooks we can use class component features like state, lifeCycle, pure component etc.
@@ -23,8 +24,28 @@
                                  it will runs only when our state and props gets updated which we write in 
                                  that array.
                                 -> pass [] empty array when we have to perform useEffect only once.
+                                It will helpful while fetch api data because we need api data once.
 
-  useEffect with cleanup(componentWillUnomount) => Example :-
+  useEffect with cleanup() => It will only call when our component will about to unmount.
+                              useEffect() return a function this is clenup function.
+
+  useContext() ->  Context provides a way to pass data through the component tree without passing 
+                   props to down manually at every level.This a way to prevent from (prop drilling).
+                  -> Previously we are using context api -> context -> provider -> consumer(lengthy code).
+                  -> then useContext() hook come into the picture
+                   
+  steps to archeive useContext() -> 1. createContext in parent component.
+                                      const MyName = createContext();
+                                    2. set the value to provider
+                                     <MyName.Provider value={"Raunak Sharma"}> <compA/> <MyName.provider/>
+                                      and export {MyName}
+                                    3. import the context (MyName);
+                                     and assing that into a variable -> const myName = useContext(MyName)  
+                                    Now we can easily use like ->  <h3>My Name is {myName} </h3>
+
+
+
+
   useEffect(
     ()=>{
       componentDidUpdate(runs 1st Time)&&componentWillUpdate( props and state update it runs)
