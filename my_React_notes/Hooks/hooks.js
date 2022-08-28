@@ -46,7 +46,7 @@
   4. useReducer()  -> useReducer is hook that is used for state managment and it is the alternative of useState
                    ->useReducer is usually preferable to useState when you have complex state logic that involves multiple sub-values or when the next state depends on the previous one.
                    ->cosnt [currentState,dispatch] useReducer(reducer,initialState) accept two parameter and reducer function is also accept two parameter 
-                      reducer(currentState,action)
+                      reducer(currentState,action).
 
 
   
