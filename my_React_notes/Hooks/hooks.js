@@ -48,6 +48,7 @@
                    ->cosnt [currentState,dispatch] useReducer(reducer,initialState) accept two parameter and reducer function is also accept two parameter 
                       reducer(currentState,action).
 
+    Note:-    useReducer also lets you optimize performance for components that trigger deep updates because you can pass dispatch down instead of callbacks.
 
   
   
